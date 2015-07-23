@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/formbg"
+        android:orientation="vertical">
+
+        <com.yy.ui.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="@string/area"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <FrameLayout
+                android:id="@+id/project_spn_fl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Spinner
+                    android:id="@+id/sp_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/short_right"
+                    android:gravity="right|center"
+                    android:paddingLeft="8dp"
+                    android:prompt="@string/house_prompt"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="110.0dip"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/go_detail" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_project_left"
+                android:layout_marginLeft="15dp"
+                android:text="@string/startdate"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_start_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:paddingRight="35.0dip" />
+
+                <ImageView style="@style/transfer_info_img" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_project_left"
+                android:layout_marginLeft="15dp"
+                android:text="@string/enddate"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_end_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:paddingRight="35.0dip" />
+
+                <ImageView style="@style/transfer_info_img" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="@string/rentamount"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <EditText
+                android:id="@+id/et_rentamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="交租"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="交"
+                android:textSize="18sp"
+                android:width="18dp" />
+
+            <EditText
+                android:id="@+id/et_intervel"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:text="月"
+                android:textSize="18sp"
+                android:width="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="押"
+                android:textSize="18sp"
+                android:width="18dp" />
+
+            <EditText
+                android:id="@+id/et_desposit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:text="月"
+                android:textSize="18sp"
+                android:width="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:id="@+id/tv_project_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="租客"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <EditText
+                android:id="@+id/et_renter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="手机"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="证件"
+                android:textSize="18sp"
+                android:width="60dp" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="26.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_vline" />
+
+            <EditText
+                android:id="@+id/et_renterId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:paddingLeft="5dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:padding="7dp" >
+
+            <EditText
+                android:id="@+id/et_contract_des"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="合同备注"
+                android:padding="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progress_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.yy.util.ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="正在加载。。。"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/action_btn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/action_btn"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/back" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

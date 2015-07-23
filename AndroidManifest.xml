@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yy.house"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yy.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_app_logo" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yy.activity.MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.LoginActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.RegisterActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.HouseActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.ContractActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.RentContractActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.RentalListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.yy.activity.RentalActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

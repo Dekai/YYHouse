@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="area">
+        <item>社会山</item>
+        <item>家泰里</item>
+        <item>悦盛里</item>
+        <item>地丰里</item>
+    </string-array>
+
+</resources>
